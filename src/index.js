@@ -1,3 +1,14 @@
+var src_default = {
+  async fetch(request, env, ctx) {
+    console.log("Logging: " + request.url)
+    return new Response("Hello World!");
+  }
+};
+export {
+  src_default as default
+};
+
+
 /**
  * Welcome to Cloudflare Workers! This is your first worker.
  *
@@ -8,8 +19,4 @@
  * Learn more at https://developers.cloudflare.com/workers/
  */
 
-export default {
-	async fetch(request, env, ctx) {
-		return new Response('Hello World!');
-	},
-};
+
