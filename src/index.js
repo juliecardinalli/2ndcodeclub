@@ -26,14 +26,15 @@ var src_default = {
 			const n = getRandomInt(4)
 			const value = julies_responses[n]
 
-			return new Response(value, {headers: {
+			return new Response(value, {
+				headers: {
                    'content-type': 'application/json',
                },
            });
         }
-
-		else {
-			return new Response('Please use a get request', {headers: {
+        else {
+			return new Response('Please use a get request', {
+				headers: {
                    'content-type': 'application/json',
                },
            });
