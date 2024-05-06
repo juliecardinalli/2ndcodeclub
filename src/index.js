@@ -27,22 +27,20 @@ var src_default = {
 			const value = julies_responses[n]
 
 			return new Response(value, {
-				headers: {
-                   'content-type': 'application/json',
-               },
-           });
+				headers: {'content-type': 'application/json',
+				},
+			});
         }
         else {
-			return new Response('Please use a get request', {
-				headers: {
-                   'content-type': 'application/json',
+        	return new Response('Please use a get request', {
+        		headers: {
+        			'content-type': 'application/json',
                },
            });
         }
     }
 };
-
-export {
+export{
 	src_defaut as deafult 
 };
 
